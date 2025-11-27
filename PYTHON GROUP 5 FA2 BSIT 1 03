@@ -1,0 +1,32 @@
+Python 3.14.0 (tags/v3.14.0:ebf955d, Oct  7 2025, 10:15:03) [MSC v.1944 64 bit (AMD64)] on win32
+Type "help", "copyright", "credits" or "license" for more information.
+...             else:
+...                 for l in logs:
+...                     print(f"{l['date']} | {''*int(l['hours'])} {l['hours']}h")
+...
+...         elif choice == "5":
+...             print("\n=== Sleep Tips ===")
+...             print("1. try working out 1hr before going to sleep to get your body exhaust and get comfy.")
+...             print("2. Avoid using phone before bedtime.")
+...             print("3. try playing classical or lofi music while on the bed.")
+...             print("4. Don't take any Caffeine before bedtime")
+...             print("5. counting sheep while on the bed")
+...             print("6. stop overthinking let every though release and be comfortable")
+...
+...         elif choice == "6":
+...             sec = input("Seconds before reminder: ")
+...             try:
+...                 sec = int(sec)
+...                 print("Reminder set...")
+...                 time.sleep(sec)
+...                 print(" Time is up GO TO SLEEP NOW!")
+...             except:
+...                 print("Invalid input.")
+...
+...         elif choice == "7":
+...             print("Logged out.")
+...             current_user = None
+...
+...         else:
+...             print("Invalid choice.")
+...
